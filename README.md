@@ -21,6 +21,22 @@ public/presentation/views/page-not-found.vue: La vista del error 404; a lo mucho
 
 App.vue: El contenedor principal que solo aloja el Toolbar y el <router-view>.
 
+
+
+🟡 2. Modificar Ligeramente (Plantillas repetitivas)
+Estos archivos mantienen un 90% de la misma estructura. Tu trabajo aquí es un "buscar y reemplazar" para cambiar los nombres de las rutas, las variables o los endpoints.
+
+main.js: La estructura de inicialización (Pinia, Router, i18n, Tema) es igual. Solo modificas qué componentes específicos de PrimeVue (Button, Card, Dropdown, DataTable) importas según lo que pida el PDF.
+
+router/index.js: El patrón de redirección / a /home y la captura del 404 es idéntica. Solo debes tener cuidado de adaptar las child routes (rutas hijas) según los dominios que exija la rúbrica.
+
+shared/presentation/components/toolbar.vue: La maquetación de PrimeVue (#start, #center, #end) no cambia. Solo cambias la URL del Logo de Logo.dev y los links a donde apuntan los botones.
+
+Archivos *.api.js (Infraestructura): El patrón de la clase con métodos estáticos (http.get, http.post) es idéntico. Solo cambias el string de la URL (ej. pasas de '/countries' a '/incidents').
+
+Archivos *.entity.js y *.assembler.js: La lógica del mapeo es idéntica. Solo cambias las propiedades de la clase para que calcen con los campos de tu db.json.
+
+en.json y es.json: La estructura de llaves es la misma, solo cambias los textos y títulos para que coincidan con la temática.
 ## Recommended Browser Setup
 
 - Chromium-based browsers (Chrome, Edge, Brave, etc.):
