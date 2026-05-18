@@ -1,6 +1,10 @@
 # web3
 
-This template should help get you started developing with Vue 3 in Vite.
+npm install vue-router axios pinia vue-i18n primevue primeflex primeicons
+npm install @primevue/themes
+npm i @primeuix/themes
+npm install -g json-server@0.17.4
+npm install @primevue/themes
 
 ## Recommended IDE Setup
 
