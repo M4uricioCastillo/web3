@@ -1,0 +1,37 @@
+{
+  "toolbar": {
+    "title": "Travelocity Experience Management",
+    "home": "Home",
+    "newIncident": "New Incident"
+  },
+  "notFound": {
+    "title": "Page Not Found",
+    "message": "The path you requested was not found:",
+    "returnBtn": "Return to Home"
+  },
+  "home": {
+    "title": "Home",
+    "subtitle": "We aspire to be the premier experience-driven travel company",
+    "analytics": "Incident Analytics",
+    "nextRequest": "Next Service Request"
+  },
+  "stats": {
+    "costPerHour": "Cost Per Hour",
+    "accumulatedCost": "Accumulated Cost",
+    "reportedIncidents": "Reported Incidents"
+  },
+  "request": {
+    "priority": "Priority",
+    "action": "Needed Action",
+    "date": "Registered At",
+    "none": "No pending high priority requests."
+  },
+  "newIncident": {
+    "title": "New Incident",
+    "subtitle": "Add an Incident Record",
+    "destination": "Destination",
+    "type": "Incident Type",
+    "create": "Create",
+    "cancel": "Cancel"
+  }
+}

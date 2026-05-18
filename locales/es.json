@@ -1,0 +1,37 @@
+{
+  "toolbar": {
+    "title": "Gestión de Experiencias Travelocity",
+    "home": "Inicio",
+    "newIncident": "Nuevo Incidente"
+  },
+  "notFound": {
+    "title": "Página no encontrada",
+    "message": "La ruta solicitada no existe:",
+    "returnBtn": "Volver al Inicio"
+  },
+    "home": {
+        "title": "Inicio",
+        "subtitle": "Aspiramos a ser la empresa de viajes impulsada por experiencias líder en el mundo",
+        "analytics": "Análisis de Incidentes",
+        "nextRequest": "Próxima Solicitud de Servicio"
+    },
+  "stats": {
+    "costPerHour": "Costo por Hora",
+    "accumulatedCost": "Costo Acumulado",
+    "reportedIncidents": "Incidentes Reportados"
+  },
+  "request": {
+    "priority": "Prioridad",
+    "action": "Acción Requerida",
+    "date": "Registrado el",
+    "none": "No hay solicitudes de alta prioridad pendientes."
+  },
+    "newIncident": {
+        "title": "Nuevo Incidente",
+        "subtitle": "Agregar un Registro de Incidente",
+        "destination": "Destino",
+        "type": "Tipo de Incidente",
+        "create": "Crear",
+        "cancel": "Cancelar"
+    }
+}

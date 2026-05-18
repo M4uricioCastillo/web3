@@ -1,0 +1,66 @@
+{
+  "destinations": [
+    {
+      "id": "1",
+      "name": "Machu Picchu Guided Tour",
+      "costPerHour": 50,
+      "impactInExperience": "TOTAL",
+      "defaultAction": "REFUND"
+    },
+    {
+      "id": "2",
+      "name": "Cusco City Walk",
+      "costPerHour": 20,
+      "impactInExperience": "PARTIAL",
+      "defaultAction": "RESCHEDULE"
+    },
+    {
+      "id": "3",
+      "name": "Sacred Valley Experience",
+      "costPerHour": 35,
+      "impactInExperience": "NONE",
+      "defaultAction": "RESCHEDULE"
+    }
+  ],
+  "incidents": [
+    {
+      "id": "1",
+      "destinationId": "1",
+      "incidentType": "CANCELLED_ACTIVITY",
+      "registeredAt": "2026-05-17T08:00:00Z",
+      "status": "OPEN"
+    },
+    {
+      "id": "2",
+      "destinationId": "2",
+      "incidentType": "DELAYED_ACTIVITY",
+      "registeredAt": "2026-05-16T14:30:00Z",
+      "status": "CLOSED"
+    },
+    {
+      "id": "3",
+      "destinationId": "1",
+      "incidentType": "CANCELLED_ACTIVITY",
+      "registeredAt": "2026-05-18T09:00:00Z",
+      "status": "OPEN"
+    }
+  ],
+  "service-requests": [
+    {
+      "id": "1",
+      "destinationId": "1",
+      "incidentId": "1",
+      "neededAction": "REFUND",
+      "priority": "HIGH",
+      "registeredAt": "2026-05-17T08:05:00Z"
+    },
+    {
+      "id": "2",
+      "destinationId": "2",
+      "incidentId": "2",
+      "neededAction": "RESCHEDULE",
+      "priority": "NORMAL",
+      "registeredAt": "2026-05-16T14:35:00Z"
+    }
+  ]
+}
