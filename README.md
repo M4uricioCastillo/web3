@@ -37,14 +37,61 @@ Archivos *.api.js (Infraestructura): El patrón de la clase con métodos estáti
 Archivos *.entity.js y *.assembler.js: La lógica del mapeo es idéntica. Solo cambias las propiedades de la clase para que calcen con los campos de tu db.json.
 
 en.json y es.json: La estructura de llaves es la misma, solo cambias los textos y títulos para que coincidan con la temática.
-## Recommended Browser Setup
-
-- Chromium-based browsers (Chrome, Edge, Brave, etc.):
-  - [Vue.js devtools](https://chromewebstore.google.com/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd)
-  - [Turn on Custom Object Formatter in Chrome DevTools](http://bit.ly/object-formatters)
-- Firefox:
-  - [Vue.js devtools](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
-  - [Turn on Custom Object Formatter in Firefox DevTools](https://fxdx.dev/firefox-devtools-custom-object-formatters/)
+## RUBRICA
+Se le encarga el desarrollo de una aplicación web que implemente las siguientes características: 
+● Un Toolbar, donde se muestra a la izquierda el logo de Travelocity (para ello utilice el servicio de 
+Logo.dev API) y a continuación el texto “Travelocity Experience Management”. 
+● En el Toolbar, al centro se muestra las opciones “Home”, “New Incident”. 
+Página 2 de 7 
+● El toolbar debe ofrecer además a la derecha de las opciones del toolbar, select buttons con “EN” 
+y “ES” para el cambio de idioma. 
+● La vista Home muestra como título el texto “Home” y como contenido el texto “We aspire to be 
+the premier experience-driven travel company”. 
+● Dentro de la vista Home se muestra también dos secciones: “Incident Analytics” y “Next Service 
+Request”. 
+● La sección con el título “Incident Analytics” presenta un grid list de tres componentes 
+IncidentType por columna. Para cada Incident Type registrado debe presentarse un componente 
+Incident Type Stats conteniendo un card. 
+● En el componente Incident Type Stats, el card de Incident Type debe tener en la sección header 
+el Incident Type. En la sección content deben estar dos indicadores estadísticos: Cost Per Hour y 
+Accumulated Cost. En el footer del card debe aparecer Reported Incidents. 
+● El indicador Cost Per Hour debe presentar la suma de costPerHour para los incidents registrados 
+con status OPEN. 
+● El indicador Accumulated Cost debe mostrar la sumatoria del total calculado en base a 
+costPerHour (del destino asociado al incident) por la cantidad de horas transcurridas 
+desde registeredAt hasta el momento (redondeado a valores enteros), para el total de 
+incidents con estado OPEN, redondeado a dos decimales. 
+● El indicador Reported Incidents muestra la cantidad de incidents generados para ese Incident 
+Type. Si no hay incidents reportados entonces se indica 0 (cero). 
+● La sección “Next Service Request” muestra un Card con la información del Service Request más 
+antiguo con valor “HIGH” en su atributo priority. 
+● La vista New Incident, muestra en la parte superior el título “New Incident” y debajo un subtítulo 
+Add an Incident Record. 
+● La vista New Incident, presenta un form para el ingreso de un Incident. Implemente una interfaz 
+que permita al usuario especificar el destino y seleccionar el Incident Type. Considere que los 
+atributos status y registeredAt no deben solicitarse en el form, sino poblarse automáticamente 
+(status con valor OPEN y registeredAt con la fecha y hora actual) al momento de crear el registro. 
+Ofrezca al usuario las acciones de Create y Cancel. La acción Create permite realizar el registro, 
+mientras que Cancel descarta la acción. En ambos casos debe llevar al usuario a la vista principal. 
+● Al momento de crear el incident record, debe, según el destino, generar automáticamente un 
+Service Request considerando como neededAction el valor de defaultAction asociado al destino. 
+● Solo se puede registrar para un Destination como máximo un elemento en /incidents por cada 
+día. 
+● Considere una vista de tipo page-not-found para el caso de rutas de navegación no soportadas. 
+Dicha vista debe mostrar un mensaje incluyendo la ruta especificada que no se encontró y debe 
+ofrecer un botón para retornar a Home. 
+● La vista Home es accesible desde la ruta de navegación /home. 
+● La vista New Incident es accesible desde la ruta de navegación /support/incidents/new. 
+● La vista raíz (accesible desde la ruta de navegación /) debe redirigir al usuario a la vista /home. 
+● La interfaz de usuario debe estar disponible en inglés y español, siendo inglés el idioma por 
+defecto. 
+● La interfaz de usuario debe utilizar uno de los cuatro presets de PrimeVue: Aura, Material, Lara o 
+Nora. Utilice el preset con la mayor aproximación al design style del website de Travelocity. 
+El equipo de IT de su cliente tomará en cuenta no solo el cumplimiento de las características funcionales, 
+sino el diseño de interfaz de usuario, así como la estructura del proyecto, aplicación de convenciones de 
+Página 3 de 7 
+nomenclatura de objetos de programación en inglés, convenciones de nomenclatura de Vue.js, 
+organización y eficiencia del código. Igualmente se tomará en cuenta la aplicación de patrones de diseño. 
 
 ## Customize configuration
 
